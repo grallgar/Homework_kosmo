@@ -2,7 +2,7 @@ package ru.astraperaspera.kc.ls3;
 
 import java.math.BigDecimal;
 
-public class task1 {
+public class Task1 {
 
     private void toUSD(int rub, double course) { // Принимаем сумму в рублях и значение курса
         BigDecimal bdCourse = new BigDecimal(course);
@@ -14,7 +14,7 @@ public class task1 {
     }
 
     public static void main(String[] args) {
-    task1 newUsd = new task1();
+    Task1 newUsd = new Task1();
     newUsd.toUSD(12, 1.6469);
     }
 }
