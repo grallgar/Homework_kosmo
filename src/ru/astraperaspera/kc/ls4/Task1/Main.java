@@ -22,13 +22,13 @@ public class Main {
             System.out.println("Введите номер космонавта. Для выхода нажмите q.");
             Scanner scan = new Scanner(System.in);
             String intString = scan.nextLine();
-            if (intString.matches("[1-6?]")) {  //а вот тут я завяз
+            if (intString.matches("[1-6?]")) { //если введен корректный номер астронавта, выводим его данные
                 int number = Integer.parseInt(intString) - 1;
                 System.out.println("Имя: " + Astro[number].name + "\n" + "Рост: " + Astro[number].weight + "\n" + "Вес: " + Astro[number].weight + "\n" +
                         "Обхват груди: " + Astro[number].chest + "\n" + "Обхват талии: " + Astro[number].waist + "\n" + "Обхват головы: " + Astro[number].hip + "\n");
-            } else if ("q".equals(intString)) {
+            } else if ("q".equals(intString)) { //выход по нажатию "q"
                 break;
-            }  else {
+            }  else { //обработка неправильного ввода
                 System.out.println("Введено некорректное значение!");
             }
         }
